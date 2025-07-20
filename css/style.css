@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Cairo+Play:wght@200..1000&family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reem+Kufi:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --secondary-color:#ff3333  ;
+    --black-color: black;
+    --third-color: #fabfbf;
+    --fourth-color: #fdf2f2d8;
+    --fifth-color:#f5bebe69 ;
+    --text-color:#641515;
+    ;
+}
+body{
+    font-family: "Cairo" !important;
+
+}
+a{
+    text-decoration: none !important;
+    color:var(--text-color)  !important;
+}
+.top-header{
+    background-color:var(--third-color);
+   
+}
+.left-header a{
+margin-left: 20px;
+border-left: 1px solid black;
+padding-left: 15px;
+transition: 0.3s all;
+}
+.left-header a:hover{
+    color:var(--secondary-color) !important;
+    
+}
+.menu-icon{
+    border-radius: 3px !important;
+    box-shadow: none !important;
+}
+  .nav-link {
+    font-weight: 600 !important;
+    transition: border-radius 0.3s ease !important;
+        border-radius: 20px 2px 20px 2px;
+    padding: 8px 16px;
+    display: inline-block;
+  }
+
+  .nav-link:hover {
+    background-color: var(--third-color);
+   
+  }
+
+  .navbar-nav li a {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 15px;
+  }
+.bottom-header{
+    background-color: var(--fourth-color);
+    box-shadow: 2px 2px 3px var(--fourth-color);
+}
+.icon .icon-link{
+    left: 7px;
+    top: 30%;
+    color: var(--secondary-color);
+}
+.price{
+        margin-top: 5px;
+    margin-bottom: 10px;
+}
+/* start categories */
+.categories,
+.special-products,
+.new-products{
+     background-color: var(--fourth-color);
+    border-bottom: 1px solid var(--secondary-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+     margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cat img{
+    transition: all 0.3s;
+}
+.cat:hover img{
+scale: 1.1;
+}
+
+.cate h3{
+    font-size: 21px !important;
+    font-weight: 400px;
+    font-family: "Almarai";
+    margin-top: 10px;
+}
+.btn{
+    background-color: var(--third-color) !important;
+    border: 1px dash var(--secondary-color) !important;
+    color: var(--text-color) !important;
+}
+.btn:hover{
+    background-color: var(--secondary-color) !important;
+}
+ .sliders{
+   margin-top: 50px;
+    margin-bottom: 50px !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+.section-title{
+    margin-bottom: 40px !important;
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-family: "Almarai";
+}
+/* end categories */
+/* start products*/
+
+.products,
+
+.ads{
+    margin-top: 70px;
+    margin-bottom: 70px !important;
+    padding-top: 50px;
+   
+}
+.swiper-button-prev,
+.swiper-button-next{
+    color: var(--third-color) !important;
+}
+.quick-icon{
+    background-color: var(--fourth-color);
+}
+.card{
+    background-color: var(--fifth-color) !important;
+}
+.product-info{
+    padding: 10px;
+}
+.product-info h3{
+    font-family: "Almarai";
+    font-weight: bold;
+    font-size: 22px;
+}
+.product-info p{
+    font-size: 14px;
+
+}
+.stars i{
+    color: rgb(228, 228, 3);
+    font-size: 20px;
+}
+.price :first-child{
+    color: var(--secondary-color);
+    margin-left: 20px;
+    font-weight: 600;
+}
+.price :last-child{
+    text-decoration: line-through;
+}
+.quick-icon{
+    position: absolute;
+    background-color: rgb(238, 233, 233);
+    right: -45px;
+    top: 15px;
+    height: 150px;
+    width: 45px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+transition: 0.3s;
+}
+.quick-icon i{
+    font-size: 18px;
+
+}
+.product:hover .quick-icon{ 
+right: 0;
+}
+/* end products*/
+/* start new products*/
+
+.btn-quantity button {
+    border: 1px solid #eee;
+}
+.btn-quantity button:hover{
+      border: 1px solid #ccc;
+}
+.btn-quantity button:active{
+      border: 1px solid #ccc !important;
+}
+@media (max-width:768px) {
+    .add-btn button{
+        font-size: 14px !important;
+    }
+    .acc img{
+        margin-top: 20px;
+    }
+}
+/* end new products*/
+
+.mini-card{
+    background-color: var(--fourth-color);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.mini-card img{
+    border-radius: 5px;
+}
+.btn-quantity-mini button{
+background-color:white !important;
+border: 1px solid var(--third-color) !important;
+}
+.btn-quantity-mini button:hover{
+    border: 1px solid #ccc;
+    
+}
+.row-mini-card{
+    padding-bottom: 20px;
+    
+}
+.mini-login{
+     border: 1px dashed #ccc;
+     padding: 10px;
+     border-radius: 5px;
+}
+
+
+.week-product{
+    padding-top: 50px;
+
+}
+.product-sm{
+    background-color:#eeeeee7f ;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px dashed #98979788;
+    overflow: hidden;
+
+}
+.product-sm:hover img{
+   scale: 1.03;
+}
+.product-sm img{
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.product-sm .product-info :first-child{
+    font-weight: bold;
+}
+.product-sm .product-info :last-child{
+    color: red;
+    font-weight: bold;
+
+}
+
+.mini-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* start quick view product */
+
+.ad{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0px;
+    border-radius: 10px !important;
+}
+.ad img{
+    transition: 0.3s;
+}
+.ad:hover img{
+    
+    scale:1.1;
+}
+.ad .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.244);
+    z-index: 100 !important;
+}
+.ad .ad-info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 101 !important;
+}
+.ad .ad-info h3 ,
+.ad .ad-info p{
+    color: #eeee;
+}
+.ad .ad-info h3 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Almarai";
+}
+@media (max-width :768px) {
+    .ads .ad-info p{
+   font-size: 16px;
+   padding: 10px !important;
+   margin: 20px !important;
+}
+.ads .ad-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Almarai";
+}
+}
+/* end quick view product */
+
+/* start footer */
+footer{
+    background-color:#641515bb;
+    padding-top: 50px;
+    margin-top: 100px;
+    background-image: url("../images/footerbg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 2px solid var(--secondary-color);
+}
+
+footer h3{
+    color:var(--text-color);
+    font-family: "Almarai";
+    font-weight: bold;font-size: 20px;
+}
+footer a{
+    color: rgb(255, 255, 255) !important;
+}
+footer .btn {
+    background-color: var(--third-color) !important;
+}
+footer .btn:hover{
+    background-color: var(--secondary-color) !important;
+}
+footer .f4 p,
+footer .first-f p{
+    color: rgb(255, 255, 255) !important;
+    font-size: 14px;
+    width: 90%;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+footer .row:first-child{
+    border-bottom: 1px dashed #eeeeee46;
+    /* padding-top: 30px !important; */
+ 
+}
+
+footer form button{
+    background-color: var(--secondary-color) !important;
+}
+footer .navbar-nav li{
+    margin-bottom: 10px;
+}
+
+/* end footer */
+
+.carousel-images{
+    position: absolute !important;
+    bottom: -70px !important;
+
+}
+.img-slider{
+    width: 30% !important;
+    height:30% !important;
+    border-radius: 15px;
+border: 1px dashed  #ccc !important;
+}
+.review-title{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Almarai";
+}
+.review-section{
+    border:  1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+}
+.bunner__p{
+    background-image: url('../asset/bg__p3.webp');
+}
+.bunner__ch{
+background-image: url('../asset/bg__ch4.jpg');  
+}
+.bunner__j{
+    background-image: url('../asset/bg__j.jpg');
+}
+.bunner__f{
+    background-image: url('../asset/bg__f.jpg');
+}
+.bunner__p,
+.bunner__ch,
+.bunner__j,
+.bunner__f{
+    padding-top: 150px;
+    padding-bottom: 150px;
+     background-color:rgba(255, 255, 255, 0.185) ;
+
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+    position: relative;
+
+}
+ .overlay1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.category-title{
+    color: var(--text-color);
+    font-family: "ALmarai";
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.filter-section{
+    background-color: var(--fourth-color) !important;
+    padding: 10px;
+border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+}
+.filter-title{
+     font-family: "ALmarai";
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.cart-product-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.summary{
+    background-color: var(--fourth-color);
+    padding: 15px;
+    border-radius: 10px;
+}
+.cart-item{
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 15px;
+}
+
+.user-info{
+    background-color: var(--fourth-color);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.total-price{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.master-card{
+background-color: var(--fourth-color);
+padding: 10px;
+border-radius: 10px;
+}
+.master-card img{
+        top: 57%;
+    left: 7px;
+}
+
+.iti{
+    width: 100% !important;
+}
+.iti__country-list{
+    position: absolute !important;
+    left: 0;
+
+}
