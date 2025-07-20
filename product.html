@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store | product</title>
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+    <div class="top-header d-flex align-items-center py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-4">
+            <a href="#"><img width="50" src="asset/bow-tie-svgrepo-com.svg" alt="logo" /></a>
+          </div>
+          <div class="col-6 col-md-4">
+            <input type="text" class="form-control" placeholder="اكتب اسم المنتج للبحث عنه" />
+          </div>
+          <div class="col-md-4 left-header d-flex align-items-center d-none d-lg-flex justify-content-end">
+            <a data-bs-toggle="offcanvas" href="#cart " role="button" aria-controls="offcanvasExample">
+              <span>السلة</span>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample">
+              <span>الدخول</span>
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="#">
+              <span>المفضلة</span>
+              <i class="fa-solid fa-heart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <div>
+            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#login">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category__F.html">هدايا ورد</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category__CH.html">هدايا شوكولاته</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category__J.html">هدايا اكسسوارات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category__P.html">هدايا عطور</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- cart -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cart">سلة المشتريات</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row d-flex flex-column row-mini-card">
+          <div class="col mini-card d-flex w-100 justify-content-between align-items-center flex-row">
+            <img class="img-fluid w-25" src="asset/flower1.webp" alt="">
+            <p>باقة ورد</p>
+            <div class="btn-group btn-quantity-mini" role="group" aria-label="Basic example">
+              <button type="button" class="btn">+</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">-</button>
+            </div>
+          </div>
+          <div class="col mini-card d-flex  justify-content-between align-items-center flex-row">
+            <img class="img-fluid w-25" src="asset/j1.jpg" alt="">
+            <p>اكسسوارات</p>
+            <div class="btn-group btn-quantity-mini" role="group" aria-label="Basic example">
+              <button type="button" class="btn">+</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">-</button>
+            </div>
+          </div>
+          <div class="col mini-card d-flex w-100 justify-content-between align-items-center flex-row">
+            <img class="img-fluid w-25" src="asset/ch1.jpg" alt="">
+            <p>شوكولاته </p>
+            <div class="btn-group btn-quantity-mini" role="group" aria-label="Basic example">
+              <button type="button" class="btn">+</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">-</button>
+            </div>
+          </div>
+          <div class="col mini-card d-flex justify-content-between align-items-center">
+            <img class="img-fluid w-25" src="asset/ch2.jpg" alt="">
+            <p>شوكلاته</p>
+            <div class="btn-group btn-quantity-mini" role="group" aria-label="Basic example">
+              <button type="button" class="btn">+</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">-</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <p class="alert alert-danger text-center my-3">مجموع المنتجات 150 $ فقط لا غير </p>
+        <button class="btn btn-primary w-100"><a href="cart.html" class="text-white">عرض السلة</a></button>
+          <button class="btn btn-danger w-100"><a href="checkout.html" class="text-white"> إتمام الطلب</a></button>
+        </div>
+      </div>
+    </div>
+    <!-- login -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="login">تسجيل الدخول</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="mini-login">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">اسم المستخدم أو البريد</label>
+              <div class="position-relative icon">
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <i class="fa-solid icon-link fa-envelope position-absolute"></i>
+              </div>
+
+            </div>
+            <div class="mb-3">
+              <label for="Password" class="form-label">كلمة المرور</label>
+              <div class="position-relative icon">
+                <input type="password" class="form-control" id="Password">
+                <i class="fa-solid fa-lock position-absolute icon-link"></i>
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">تذكر بياناتي</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">تسجيل الدخول</button>
+          </form>
+          <div class="alert alert-danger my-3 text-center">
+            <a href="">انقر هنا في حال نسيت كلمة المرور</a>
+          </div>
+          <hr>
+          <div class="text-center mt-5">
+            <i class="fa-regular fa-user fa-5x"></i>
+            <p>ليس لديك حساب ؟</p>
+            <a href="" class="btn btn-danger w-100 text-white">إنشاء حساب جديد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+  <div class="container mt-5">
+    <nav
+      style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+      aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+        <li class="breadcrumb-item " aria-current="page">اكسسوارات</li>
+        <li class="breadcrumb-item active" aria-current="page"> القطعة الأولى</li>
+      </ol>
+    </nav>
+    <div class="row">
+      <div class="col col-md-4">
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators carousel-images">
+            <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active img-slider"
+              src="asset/j1.jpg" alt="">
+            <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="img-slider"
+              src="asset/j2.jpg" alt="">
+            <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="img-slider"
+              src="asset/j3.avif" alt="">
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="asset/j1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="asset/j2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="asset/j3.avif" class="d-block w-100" alt="...">
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="col col-md-6">
+        
+                <p class="product-description">
+                  أضيفي لمسة ساحرة إلى إطلالتك مع مجموعتنا المختارة من الاكسسوارات. تصميمات تنبض بالأناقة وتكمّل شخصيتك.
+                </p>
+                <div class="quick-review my-3">
+                  <span>تقييمات المستخدمين :</span>
+                  <div class="stars mb-2 d-inline-flex">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price my-3">
+                    <span>السعر : 60 $</span>
+                    <span> 70 $</span>
+                  </div>
+
+                  <div class="btns d-flex gap-3">
+                    <div class="btn-group btn-quantity" role="group" aria-label="Basic example">
+
+                    </div>
+                    <div class="d-flex gap-1 add-btn">
+                      <button class="btn btn-danger">شراء الآن</button>
+
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="category mb-3">
+                    <span>التصنيفات :</span>
+                    <a href="">اكسسوارات</a>
+                  </div>
+                  <div class="share">
+                    <span>المشاركة :</span>
+                    <div class="share-icons d-inline-flex gap-2">
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-whatsapp"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-x-twitter"></i>
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                  </div>
+                </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <!-- start special products -->
+  <div class="container pt-5 mt-5">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" data-bs-toggle="tab" href="#description">تفاصيل المنتج</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#reviews">المراجعات</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#zz">تعليمات الشحن</a>
+      </li>
+
+    </ul>
+
+    <div class="tab-content">
+
+      <div class="tab-pane fade mt-5 show active" id="description">
+        <div class="row  flex-column-reverse flex-md-row justify-content-between">
+          <div class="col">
+            <p>خاتم نسائي فاخر:
+
+- المادة: فضة إسترليني عيار 925 بلمعة أنيقة ومقاومة للخدش
+- الحجر: زركون عالي النقاء بقصة براقة تحاكي الألماس
+- التصميم: أنثوي وراقي بلمسات من الفخامة، مناسب لمحبات التميز
+- المقاسات: متوفر بمقاسات متعددة، مع إمكانية التعديل لتناسب الإصبع
+- الوزن: خفيف ومريح، مثالي للاستخدام اليومي أو المناسبات
+- اللون: فضي لامع يتناسق مع جميع الألوان والإطلالات
+- الاستخدام: هدية مثالية أو إضافة أنيقة لأي مجموعة مجوهرات
+</p>
+            <p>"خاتم يسرق الأنظار بتصميمه الفاخر وأحجاره المتلألئة. مصنوع من فضة نقية ومزين بزركون فاخر ليمنحك لمسة من الفخامة في كل لحظة."</p>
+          
+          </div>
+          <div class="col">
+            <img class="img-fluid" src="images/description-img.webp" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade mt-5" id="reviews">
+        <div class="row  flex-column-reverse flex-md-row justify-content-start gap-5">
+          <div class="col col-md-5 review-section">
+            <h3 class="review-title">يسعدنا إبداء رأيكم بالمنتج</h3>
+            <form action="">
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input type="text" class="form-control" placeholder="الرجاء إدخال الاسم">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input type="email" class="form-control" placeholder="الرجاء إدخال البريد">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <textarea name="" id="" class="form-control" rows="5"></textarea>
+              </div>
+              <button class="btn btn-danger">إرسال البيانات</button>
+            </form>
+          </div>
+          <div class="col col-md-5 review-section">
+            <h3 class="review-title">تقييمات العملاء</h3>
+            <h3>4.9</h3>
+            <div class="stars mb-2 d-inline-flex">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-title">4500 عميل ابدى رأيه بالمنتج</p>
+            <div class="d-flex flex-column gap-4">
+              <div class="d-flex align-items-center gap-3">
+                <span>5 <i class="fa-solid fa-star"></i> </span>
+                <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 90%">
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <span>4 <i class="fa-solid fa-star"></i> </span>
+                <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <span>3 <i class="fa-solid fa-star"></i> </span>
+                <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 50%"></div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <span>2 <i class="fa-solid fa-star"></i> </span>
+                <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 20%">
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <span>1 <i class="fa-solid fa-star"></i> </span>
+                <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 10%">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade mt-5" id="zz">
+        <div class="row  flex-column-reverse flex-md-row justify-content-between">
+          <div class="col">
+            <h2 class="review-title text-danger">تعليمات الشحن للاجهزة الالكترونية</h2>
+            <h3 class="review-title">التغليف الآمن</h3>
+            <p>- يتم تغليف القطعة داخل علبة فاخرة مخصصة للمجوهرات لتوفير الحماية والأناقة في آنٍ واحد.
+- توضع العلبة داخل مغلف واقٍ من الصدمات والرطوبة، لضمان وصولها بحالة ممتازة.
+- نستخدم طبقات إضافية من الحشو أو الفقاعات الهوائية في حال كانت القطعة حساسة أو مزينة بأحجار.</p>
+            
+            <h3 class="review-title">تفاصيل الشحن</h3>
+            <p>
+             - نوفر خدمة الشحن إلى جميع المناطق داخل سوريا وخارجها (حسب توفر الخدمة).
+- يتم شحن الطلب خلال 1–3 أيام عمل من تأكيد الدفع.
+- الشحن يتم عبر شركات موثوقة لضمان سرعة الوصول وجودة الخدمة.
+            </p>
+          </div>
+          <div class="col">
+            <img class="img-fluid" src="images/shipping.webp" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- end special products -->
+
+
+ 
+
+<!-- start new related products -->
+  <section class="mt-5">
+    <div class="container">
+      <h2 class="section-title"> منتجات مشابهة</h2>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="col product mb-3 acc swiper-slide">
+          
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-icon" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="asset/j1.jpg" alt="product" />
+            <div class="product-info">
+                <h3>اكسسوارات</h3>
+                <p>تفاصيل صغيرة تكمّل أناقتك... لأنك تستحقين التميز.</p>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                  <span>السعر : 40 $</span>
+                  <span> 50 $</span>
+                </div>
+
+                <button class="btn btn-danger w-100">شراء الآن</button>
+              </div>
+          </div>
+        </div>
+        <div class="col product__ch mb-3 swiper-slide" >
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-icon" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="asset/j2.jpg" alt="product" />
+            <div class="product-info">
+                <h3>اكسسوارات</h3>
+                <p>تفاصيل صغيرة تكمّل أناقتك... لأنك تستحقين التميز.</p>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                  <span>السعر : 40 $</span>
+                  <span> 50 $</span>
+                </div>
+
+                <button class="btn btn-danger w-100">شراء الآن</button>
+              </div>
+          </div>
+        </div>
+        <div class="col product__ch mb-3 swiper-slide">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-icon" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="asset/j3.avif" alt="product" />
+            <div class="product-info">
+                <h3>اكسسوارات</h3>
+                <p>تفاصيل صغيرة تكمّل أناقتك... لأنك تستحقين التميز.</p>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                  <span>السعر : 40 $</span>
+                  <span> 50 $</span>
+                </div>
+
+                <button class="btn btn-danger w-100">شراء الآن</button>
+              </div>
+          </div>
+        </div>
+        <div class="col product__ch mb-3 swiper-slide">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-icon" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="asset/j4.jpg" alt="product" />
+            <div class="product-info">
+                <h3>اكسسوارات</h3>
+                <p>تفاصيل صغيرة تكمّل أناقتك... لأنك تستحقين التميز.</p>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                  <span>السعر : 40 $</span>
+                  <span> 50 $</span>
+                </div>
+
+                <button class="btn btn-danger w-100">شراء الآن</button>
+              </div>
+          </div>
+        </div>
+        <div class="col product__ch mb-3 swiper-slide">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-icon" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="asset/j5.jpg" alt="product" />
+            <div class="product-info">
+                <h3>اكسسوارات</h3>
+                <p>تفاصيل صغيرة تكمّل أناقتك... لأنك تستحقين التميز.</p>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                  <span>السعر : 40 $</span>
+                  <span> 50 $</span>
+                </div>
+
+                <button class="btn btn-danger w-100">شراء الآن</button>
+              </div>
+          </div>
+        </div>
+        <div class="col product__ch mb-3 swiper-slide">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-icon" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="asset/j6.jpg" alt="product" />
+            <div class="product-info">
+                <h3>اكسسوارات</h3>
+                <p>تفاصيل صغيرة تكمّل أناقتك... لأنك تستحقين التميز.</p>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                  <span>السعر : 40 $</span>
+                  <span> 50 $</span>
+                </div>
+
+                <button class="btn btn-danger w-100">شراء الآن</button>
+              </div>
+          </div>
+        </div>
+        <div class="col product__ch mb-3 swiper-slide">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-icon" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="asset/j5.jpg" alt="product" />
+            <div class="product-info">
+                <h3>اكسسوارات</h3>
+                <p>تفاصيل صغيرة تكمّل أناقتك... لأنك تستحقين التميز.</p>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                  <span>السعر : 40 $</span>
+                  <span> 50 $</span>
+                </div>
+
+                <button class="btn btn-danger w-100">شراء الآن</button>
+              </div>
+          </div>
+        </div>
+        <div class="col product__ch mb-3 swiper-slide">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-icon" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="asset/j6.jpg" alt="product" />
+            <div class="product-info">
+                <h3>اكسسوارات</h3>
+                <p>تفاصيل صغيرة تكمّل أناقتك... لأنك تستحقين التميز.</p>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                  <span>السعر : 40 $</span>
+                  <span> 50 $</span>
+                </div>
+
+                <button class="btn btn-danger w-100">شراء الآن</button>
+              </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </section>
+  <!-- end new  related products -->
+
+
+
+
+
+
+
+
+
+<!-- start footer -->
+
+    <footer>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 ">
+          <div class="col first-f mb-3">
+            <img class="w-25" src="asset/bow-tie-svgrepo-com.svg" alt="logo">
+            <p>متجرنا يهتم بالجودة والخامة النظيفة ويسعى إلى توفير كل ما هو جديد وكل ما يرضي عملائنا .</p>
+            <ul class="navbar-nav text-white">
+              <li><i class="fa-solid fa-location-dot"></i>دمشق - سوريا</li>
+              <li><i class="fa-solid fa-phone"></i> 0945520788 </li>
+              <li><i class="fa-solid fa-envelope"></i>info@gmail.com</li>
+
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h3>أهم الروابط</h3>
+            <ul class="navbar-nav">
+              <li><a href="#">الرئيسية</a></li>
+              <li><a href="#">هدايا ورد</a></li>
+              <li><a href="#">هدايا اكسسوارات</a></li>
+              <li><a href="#">هدايا عطور</a></li>
+              <li><a href="#">هدايا شوكولاته</a></li>
+
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h3>التصنيفات </h3>
+            <ul class="navbar-nav">
+              <li><a href="#">ورد</a></li>
+              <li><a href="#">اكسسوارات</a></li>
+              <li><a href="#">عطور</a></li>
+              <li><a href="#">شوكولاته</a></li>
+            </ul>
+          </div>
+          <div class="col f4 mb-3">
+            <h3>النشرة البريدية</h3>
+            <p>اشترك في النشرة لضمان وصول العروض إليك </p>
+            <form action="">
+              <input type="text" placeholder="الرجاء إدخال البريد " class="form-control mb-3">
+              <button class="btn btn-danger w-100">اشترك</button>
+            </form>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 mb-3 pb-2">
+          <div class="col">
+            <img src="images/payments.png" alt="">
+          </div>
+          <div class="col  d-flex justify-content-end">
+            <p class="text-white text-center">جميع الحقوق محفوظة لمتجر هدايا  &copy; 2025</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end footer -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
